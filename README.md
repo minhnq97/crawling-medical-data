@@ -1,11 +1,22 @@
-This tool was built for crawling data from a Vietnamese medical website.
+This tool was built for crawling data from a Vietnamese medical website. The data were used for training a Biomedical Text Classification model.
 
 ## 1. Installation:
 
 - Requirement: node, yarn, mongo
 - Install requirements: ``` yarn install ```
 
-## 2. Running:
+## 2. Demonstration:
+
+- On the left hand side of the website, there are a lot of medical categories (which are the final label that model has to classify)
+![List of categories](https://github.com/minhnq97/crawling-medical-data/blob/master/categories.PNG?raw=true)
+
+- Each category has a lot of questions that are already labeled.
+![Example of questions inside a category](https://github.com/minhnq97/crawling-medical-data/blob/master/inside_cate.PNG?raw=true)
+
+- A detail question includes the title and the content of the question. The reply of doctors is ignored because it has no use in classification task.
+![Detail of a question](https://github.com/minhnq97/crawling-medical-data/blob/master/question.PNG?raw=true)
+
+## 3. Running:
 
 **Note**: The stage 1 takes several time so **highly recommend** to reproduce the code by running from **stage 2**.
 
